@@ -63,6 +63,8 @@ var button = document.getElementById("but");
 }).catch(console.error)
 });
 
+
+/*
 var Degrees = 0
 
   window.addEventListener('deviceorientation', function(event) {
@@ -74,4 +76,23 @@ var Degrees = 0
   setInterval(function(){ 
     var update = document.getElementById("degree")
     update.innerHTML = (degrees)
+   }, 500);
+*/
+var compassdir;
+   if (window.DeviceOrientationEvent) {
+    // Listen for the deviceorientation event and handle the raw data
+    window.addEventListener('deviceorientation', function(eventData) {
+      
+  
+      if(event.webkitCompassHeading) {
+        // Apple works only with this, alpha doesn't work
+        compassdir = event.webkitCompassHeading;  
+      }
+      else compassdir = event.alpha;
+    });
+  }
+
+  setInterval(function(){ 
+    var update = document.getElementById("degree")
+    update.innerHTML = (compassdir)
    }, 500);
