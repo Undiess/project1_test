@@ -50,6 +50,7 @@ img.style.transform = 'rotate('+heading+'deg)';
 
   img.onClick = function() {
   // feature detect
+  console.log("hi")
   if (typeof DeviceOrientationEvent.requestPermission === 'function') {
   DeviceOrientationEvent.requestPermission()
   .then(permissionState => {
