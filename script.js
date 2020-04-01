@@ -69,5 +69,5 @@ console.log(gamma)
     var degrees = event.alpha;
     var img = document.getElementById('arrow');
     img.style.transform = 'rotate('+heading+'deg)';
-    this.alert(degrees)
+    console.log(degrees);
   } )
