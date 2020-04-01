@@ -67,12 +67,10 @@ var button = document.getElementById("but");
   window.addEventListener('deviceorientation', function(event) {
   
     var degrees = event.alpha;
-    
-
-    setInterval(function(){ 
-      var update = document.getElementById("degree")
-      update.innerHTML = (degrees)
-     }, 3000);
-
 
   } )
+  
+  setInterval(function(){ 
+    var update = document.getElementById("degree")
+    update.innerHTML = (degrees)
+   }, 3000);
