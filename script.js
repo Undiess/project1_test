@@ -46,7 +46,7 @@ img.style.transform = 'rotate('+heading+'deg)';
 
   */
 
- img = document.getElementById('arrow');
+ img = document.getElementById('but');
 
   img.onClick = function() {
   // feature detect
