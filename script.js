@@ -46,8 +46,9 @@ img.style.transform = 'rotate('+heading+'deg)';
 
   */
 
- 
- function onClick() {
+ img = document.getElementById('arrow');
+
+  img.onClick = function() {
   // feature detect
   if (typeof DeviceOrientationEvent.requestPermission === 'function') {
   DeviceOrientationEvent.requestPermission()
