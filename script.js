@@ -74,4 +74,4 @@ var Degrees = 0
   setInterval(function(){ 
     var update = document.getElementById("degree")
     update.innerHTML = (degrees)
-   }, 3000);
+   }, 500);
