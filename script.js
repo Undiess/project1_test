@@ -69,7 +69,7 @@ if (window.deviceorientationEvent){
     var degrees = event.alpha;
     var img = document.getElementById('arrow');
     img.style.transform = 'rotate('+heading+'deg)';
-    
+    this.alert(degrees)
   } )
 }
 else {
