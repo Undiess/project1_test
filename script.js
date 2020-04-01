@@ -48,10 +48,11 @@ img.style.transform = 'rotate('+heading+'deg)';
 
 
 
+ 
 
- var button = document.getElementById('but');
 
- button.addEventlistener('click', function () {
+var button = document.getElementById("but");
+ button.addEventListener("click", function () {
    console.log("hi")
   DeviceMotionEvent.requestPermission().then(response => {
     if (response == 'granted') {
