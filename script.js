@@ -67,5 +67,5 @@ console.log(gamma)
   window.addEventListener('deviceorientation', function(event) {
   
     var degrees = event.alpha;
-    console.log(degrees)
+    alert(degrees)
   } )
