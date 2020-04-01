@@ -63,13 +63,14 @@ var button = document.getElementById("but");
 }).catch(console.error)
 });
 
+var Degrees = 0
 
   window.addEventListener('deviceorientation', function(event) {
   
-    var degrees = event.alpha;
+    degrees = event.alpha;
 
   } )
-  
+
   setInterval(function(){ 
     var update = document.getElementById("degree")
     update.innerHTML = (degrees)
