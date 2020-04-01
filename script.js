@@ -49,19 +49,19 @@ img.style.transform = 'rotate('+heading+'deg)';
 
 
 
- var img = document.getElementById('but');
+ var button = document.getElementById('but');
 
- 
- DeviceOrientationEvent.requestPermission()
-.then(response => {
-  if (response == 'granted') {
-    window.addEventListener('deviceorientation', (e) => {
+ button.addEventlistener('click', function () {
+   console.log("hi")
+  DeviceMotionEvent.requestPermission().then(response => {
+    if (response == 'granted') {
+      window.addEventListener('devicemotion', (e) => {
       // do something with e
     })
   }
-})
-.catch(console.error)
-	
+}).catch(console.error)
+});
+
 
   window.addEventListener('deviceorientation', function(event) {
   
