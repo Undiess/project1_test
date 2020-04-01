@@ -63,7 +63,7 @@ console.log(gamma)
  
 
 	
-if (window.deviceorientationEvent){
+
   window.addEventListener('deviceorientation', function(event) {
   
     var degrees = event.alpha;
@@ -71,7 +71,3 @@ if (window.deviceorientationEvent){
     img.style.transform = 'rotate('+heading+'deg)';
     this.alert(degrees)
   } )
-}
-else {
-  alert("compass not working")
-}
