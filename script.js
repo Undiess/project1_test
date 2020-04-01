@@ -46,22 +46,21 @@ img.style.transform = 'rotate('+heading+'deg)';
 
   */
 
- img = document.getElementById('but');
+ interface DeviceOrientationEvent;
+
+
+ var img = document.getElementById('but');
 
  
-  console.log("hi")
-  if (typeof DeviceOrientationEvent.requestPermission === 'function') {
-  DeviceOrientationEvent.requestPermission()
-  .then(permissionState => {
-  if (permissionState === 'granted') {
-  window.addEventListener('deviceorientation', () => {});
+ DeviceOrientationEvent.requestPermission()
+.then(response => {
+  if (response == 'granted') {
+    window.addEventListener('deviceorientation', (e) => {
+      // do something with e
+    })
   }
-  })
-  .catch(console.error);
-  } else {
-  // handle regular non iOS 13+ devices
-  }
-  
+})
+.catch(console.error)
 	
 
   window.addEventListener('deviceorientation', function(event) {
