@@ -68,4 +68,11 @@ var button = document.getElementById("but");
   
     var degrees = event.alpha;
     alert(degrees);
+
+    setInterval(function(){ 
+      var update = document.getElementById("degrees")
+      update.innerHTML("degrees")
+     }, 1000);
+
+
   } )
