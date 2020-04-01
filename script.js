@@ -64,7 +64,7 @@ console.log(gamma)
 
 	
 
-  window.addEventListener('deviceorientation', function(event) {
+  window.addEventListener('ondeviceorientation', function(event) {
   
     var degrees = event.alpha;
     var img = document.getElementById('arrow');
