@@ -44,30 +44,14 @@ var img = document.getElementById('arrow');
 img.style.transform = 'rotate('+heading+'deg)';
 
 
-
-function handleOrientation(event) {
-    var absolute = event.absolute;
-    var alpha    = event.alpha;
-    var beta     = event.beta;
-    var gamma    = event.gamma;
-  
-console.log(absolute)
-console.log(alpha)
-console.log(beta)
-console.log(gamma)
-}
-  
-  window.addEventListener("deviceorientation", handleOrientation, true);
   */
 
  
 
 	
 
-  window.addEventListener('ondeviceorientation', function(event) {
+  window.addEventListener('deviceorientation', function(event) {
   
     var degrees = event.alpha;
-    var img = document.getElementById('arrow');
-    img.style.transform = 'rotate('+heading+'deg)';
-    console.log(degrees);
+    alert(degrees);
   } )
