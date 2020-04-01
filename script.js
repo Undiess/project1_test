@@ -46,7 +46,7 @@ img.style.transform = 'rotate('+heading+'deg)';
 
   */
 
- interface DeviceOrientationEvent;
+
 
 
  var img = document.getElementById('but');
