@@ -70,9 +70,11 @@ var button = document.getElementById("but");
     
 
     setInterval(function(){ 
-      var update = document.getElementById("degrees")
-      update.innerHTML("degrees")
+      var update = document.getElementById("degree")
+      update.innerHTML(degrees)
      }, 1000);
 
 
   } )
+
+  
