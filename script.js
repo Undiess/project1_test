@@ -1,6 +1,6 @@
 
-function toRad(Value) {
-    /** Converts numeric degrees to radians */
+/*function toRad(Value) {
+     Converts numeric degrees to radians 
     return Value * Math.PI / 180;
 }
 
@@ -11,9 +11,9 @@ function toDeg(radians)
   return radians * (180/pi);
 }
 
-/* 
+
  Function getDegrees was taken from "https://stackoverflow.com/questions/8502795/get-direction-compass-with-two-longitude-latitude-points" 
-*/
+
 
 function getDegrees(lat1, long1, lat2, long2, ) {
 //  This function gets latitude and longtitude from 2 locations and calculates the direction in degrees from north 
@@ -51,7 +51,21 @@ function handleOrientation(event) {
     var beta     = event.beta;
     var gamma    = event.gamma;
   
-    // Do stuff with the new orientation data
-  }
+console.log(absolute)
+console.log(alpha)
+console.log(beta)
+console.log(gamma)
+}
   
   window.addEventListener("deviceorientation", handleOrientation, true);
+  */
+
+ 
+
+	
+
+  window.addEventListener('deviceorientation', function(event) {
+  
+    var degrees = event.alpha;
+    console.log(degrees)
+  } )
