@@ -48,8 +48,7 @@ img.style.transform = 'rotate('+heading+'deg)';
 
  img = document.getElementById('but');
 
-  img.onClick = function() {
-  // feature detect
+ 
   console.log("hi")
   if (typeof DeviceOrientationEvent.requestPermission === 'function') {
   DeviceOrientationEvent.requestPermission()
@@ -62,7 +61,7 @@ img.style.transform = 'rotate('+heading+'deg)';
   } else {
   // handle regular non iOS 13+ devices
   }
-  }
+  
 	
 
   window.addEventListener('deviceorientation', function(event) {
