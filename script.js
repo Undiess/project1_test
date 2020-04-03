@@ -64,7 +64,6 @@ var Degrees = 0
  
 
 
-function requestPermissionIOS(){
   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
   
   if (iOS === true){
@@ -80,11 +79,11 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
     }).catch(console.error)
     });
   }
-}
 
-requestPermissionIOS();
 
-function GetOrientation(){
+
+
+
   var compassdir;
      if (window.DeviceOrientationEvent) {
      window.addEventListener('deviceorientation', function(eventData) {
@@ -97,12 +96,10 @@ function GetOrientation(){
   }
 
     
-}
-var orientation = GetOrientation();
-console.log(orientation)
+
 
 setInterval(function(){ 
   var update = document.getElementById("degree")
-  update.innerHTML = (orientation)
+  update.innerHTML = (compassdir)
 }, 500);
 
