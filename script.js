@@ -81,7 +81,7 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
   }
 
 
-var compassdir = ("Compass not Working")
+
 
 if(document.DeviceOrientationEvent){
   var compassdir;
