@@ -104,4 +104,4 @@ setInterval(function(){
 
 
 var arrowimg = document.getElementById('arrow');
-	img.setAttribute('style','transform:rotate('+ compassdir +'deg)');
+	arrowimg.setAttribute('style','transform:rotate('+ compassdir +'deg)');
