@@ -93,13 +93,16 @@ function GetOrientation(){
       }
       else compassdir = event.alpha;
     });
+    return compassdir
   }
 
     
 }
+var orientation = GetOrientation();
+
+
 setInterval(function(){ 
   var update = document.getElementById("degree")
-  update.nnerHTML = (compassdir)
+  update.nnerHTML = (orientation)
 }, 500);
 
-GetOrientation();
