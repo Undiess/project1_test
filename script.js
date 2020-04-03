@@ -84,25 +84,35 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
 
 
 
-  var compassdir;
+  
      if (window.DeviceOrientationEvent) {
      window.addEventListener('deviceorientation', function(eventData) {
       if(event.webkitCompassHeading) {
         compassdir = event.webkitCompassHeading;  
       }
       else compassdir = event.alpha;
+
+      var update = document.getElementById("degree")
+  update.innerHTML = (compassdir)
+  var direc = 360 - compassdir 
+  var arrowimg = document.getElementById('arrow');
+  arrowimg.setAttribute('style','transform:rotate('+ direc +'deg)');
+  console.log(compassdir);
+
     });
-    console.log(compassdir+"hi")
+    
+
+    
   }
 
 
-console.log(compassdir+"bn");
-setInterval(function(){ 
+
+/*setInterval(function(){ 
   var update = document.getElementById("degree")
   update.innerHTML = (compassdir)
   var direc = 360 - compassdir 
   var arrowimg = document.getElementById('arrow');
   arrowimg.setAttribute('style','transform:rotate('+ direc +'deg)');
   console.log(compassdir);
-}, 50);
+}, 50);*/
 
