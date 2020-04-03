@@ -83,7 +83,7 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
 
 
 
-if(document.DeviceOrientationEvent){
+
   var compassdir;
      if (window.DeviceOrientationEvent) {
      window.addEventListener('deviceorientation', function(eventData) {
@@ -94,7 +94,7 @@ if(document.DeviceOrientationEvent){
     });
     console.log(compassdir+"hi")
   }
-}
+
 
 console.log(compassdir+"bn");
 setInterval(function(){ 
