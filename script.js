@@ -92,15 +92,16 @@ if(document.DeviceOrientationEvent){
       }
       else compassdir = event.alpha;
     });
-    
+    console.log(compassdir)
   }
 }
 
-
+console.log(compassdir);
 setInterval(function(){ 
   var update = document.getElementById("degree")
   update.innerHTML = (compassdir)
   var arrowimg = document.getElementById('arrow');
-	arrowimg.setAttribute('style','transform:rotate('+ compassdir +'deg)');
+  arrowimg.setAttribute('style','transform:rotate('+ compassdir +'deg)');
+  console.log(compassdir);
 }, 500);
 
