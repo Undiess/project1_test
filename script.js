@@ -104,5 +104,5 @@ setInterval(function(){
   var arrowimg = document.getElementById('arrow');
   arrowimg.setAttribute('style','transform:rotate('+ direc +'deg)');
   console.log(compassdir);
-}, 500);
+}, 50);
 
