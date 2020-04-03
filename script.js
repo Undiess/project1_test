@@ -83,7 +83,7 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
 
 
 
-
+if(document.DeviceOrientationEvent){
   var compassdir;
      if (window.DeviceOrientationEvent) {
      window.addEventListener('deviceorientation', function(eventData) {
@@ -94,6 +94,7 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
     });
     
   }
+}
 
     
 
