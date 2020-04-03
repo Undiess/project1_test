@@ -103,6 +103,6 @@ var orientation = GetOrientation();
 
 setInterval(function(){ 
   var update = document.getElementById("degree")
-  update.nnerHTML = (orientation)
+  update.innerHTML = (orientation)
 }, 500);
 
