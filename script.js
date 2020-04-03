@@ -92,11 +92,11 @@ if(document.DeviceOrientationEvent){
       }
       else compassdir = event.alpha;
     });
-    console.log(compassdir)
+    console.log(compassdir+"hi")
   }
 }
 
-console.log(compassdir);
+console.log(compassdir+"bn");
 setInterval(function(){ 
   var update = document.getElementById("degree")
   update.innerHTML = (compassdir)
