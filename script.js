@@ -102,7 +102,7 @@ setInterval(function(){
   update.innerHTML = (compassdir)
   var direc = 360 - compassdir 
   var arrowimg = document.getElementById('arrow');
-  arrowimg.setAttribute('style','transform:rotate('+ compassdir +'deg)');
+  arrowimg.setAttribute('style','transform:rotate('+ direc +'deg)');
   console.log(compassdir);
 }, 500);
 
