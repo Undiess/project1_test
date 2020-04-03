@@ -100,8 +100,7 @@ if(document.DeviceOrientationEvent){
 setInterval(function(){ 
   var update = document.getElementById("degree")
   update.innerHTML = (compassdir)
+  var arrowimg = document.getElementById('arrow');
+	arrowimg.setAttribute('style','transform:rotate('+ compassdir +'deg)');
 }, 500);
 
-
-var arrowimg = document.getElementById('arrow');
-	arrowimg.setAttribute('style','transform:rotate('+ compassdir +'deg)');
