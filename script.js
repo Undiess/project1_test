@@ -96,11 +96,9 @@ if(document.DeviceOrientationEvent){
   }
 }
 
-    
-
-
+if(compassdir){
 setInterval(function(){ 
   var update = document.getElementById("degree")
   update.innerHTML = (compassdir)
 }, 500);
-
+}
