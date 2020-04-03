@@ -92,7 +92,7 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
       }
       else compassdir = event.alpha;
     });
-    return compassdir
+    
   }
 
     
