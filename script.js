@@ -100,6 +100,7 @@ console.log(compassdir+"bn");
 setInterval(function(){ 
   var update = document.getElementById("degree")
   update.innerHTML = (compassdir)
+  var direc = 360 - compassdir 
   var arrowimg = document.getElementById('arrow');
   arrowimg.setAttribute('style','transform:rotate('+ compassdir +'deg)');
   console.log(compassdir);
