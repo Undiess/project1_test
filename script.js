@@ -69,7 +69,7 @@ var Degrees = 0
   if (iOS === true){
 
     var createButton = document.createElement("BUTTON");  
-    createButton.innerHTML = "CLICK ME";    
+    createButton.innerHTML = "Press here for compass";    
     createButton.setAttribute("class","btn btn-outline-primary")   
     createButton.setAttribute("id","but")
     createButton.setAttribute("type","button")       
