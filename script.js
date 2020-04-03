@@ -99,7 +99,7 @@ function GetOrientation(){
     
 }
 var orientation = GetOrientation();
-
+console.log(orientation)
 
 setInterval(function(){ 
   var update = document.getElementById("degree")
