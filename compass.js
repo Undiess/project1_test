@@ -19,6 +19,8 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
     button.addEventListener("click", function () {
     DeviceMotionEvent.requestPermission().then(response => {
       if (response == 'granted') {
+        var rmbut = document.getElementById('but')
+          rmbut.parentNode.removeChild(button)
          window.addEventListener('devicemotion', (e) => {
           
         })
@@ -28,11 +30,10 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
   }
 
 
-var rmbut = document.getElementById('but')
-          rmbut.parentNode.removeChild(button)
+          
 
           var rmtext = document.getElementById('pleasenote')
-  rmtext.innerHTML="";
+          rmtext.innerHTML="";
 
 
   
