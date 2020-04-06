@@ -1,9 +1,9 @@
 
  
 
+var displaycompass = function(){
 
   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-  
   if (iOS === true){
 
     var createButton = document.createElement("BUTTON");  
@@ -64,4 +64,5 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
 
 
 
-
+}
+displaycompass()
