@@ -20,6 +20,11 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
     DeviceMotionEvent.requestPermission().then(response => {
       if (response == 'granted') {
          window.addEventListener('devicemotion', (e) => {
+          var rmbut = document.getElementById('but')
+          rmbut.parentNode.removeChild(button)
+
+          var rmtext = document.getElementById('pleasenote')
+  rmtext.innerHTML="";
         })
      }
     }).catch(console.error)
@@ -44,13 +49,8 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
   var arrowimg = document.getElementById('arrow');
   arrowimg.setAttribute('style','transform:rotate('+ direc +'deg)');
   console.log(compassdir);
-  
-      //deleting text 
-  var rmbut = document.getElementById('but')
-  rmbut.parentNode.removeChild(button)
 
-  var rmtext = document.getElementById('pleasenote')
-  rmtext.innerHTML="";
+  
 
   var directionarrow = this.document.getElementById("windarrow");
 
