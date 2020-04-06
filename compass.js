@@ -44,6 +44,10 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
   var arrowimg = document.getElementById('arrow');
   arrowimg.setAttribute('style','transform:rotate('+ direc +'deg)');
   console.log(compassdir);
+  
+      //deleting text 
+  var del = document.getElementById('but')
+  del.parentNode.removeChild(button)
 
   var directionarrow = this.document.getElementById("windarrow");
 
