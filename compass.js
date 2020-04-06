@@ -50,7 +50,7 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
   rmbut.parentNode.removeChild(button)
 
   var rmtext = document.getElementById('pleasenote')
-  rmtext.parentNode.removeChild(p)
+  rmtext.innerHTML="";
 
   var directionarrow = this.document.getElementById("windarrow");
 
