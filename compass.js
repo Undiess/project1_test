@@ -1,7 +1,7 @@
 
  
 
-var displaycompass = function(){
+var displaycompass = function(windDirection){
 
   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
   if (iOS === true){
@@ -52,7 +52,9 @@ var rmbut = document.getElementById('but')
 
   
 
-  var directionarrow = this.document.getElementById("windarrow");
+  var directionarrow = document.getElementById("windarrow");
+  var winddegrees = compassdir - 90 + windDirection;
+  directionarrow.setAttribute('style','transform:rotate('+ winddegrees +'deg)');
 
 
     });
@@ -65,4 +67,4 @@ var rmbut = document.getElementById('but')
 
 
 }
-displaycompass()
+displaycompass(180)
