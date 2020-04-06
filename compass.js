@@ -46,8 +46,11 @@ stackoverflow was used to find the ollowing code to gain access to movement and 
   console.log(compassdir);
   
       //deleting text 
-  var del = document.getElementById('but')
-  del.parentNode.removeChild(button)
+  var rmbut = document.getElementById('but')
+  rmbut.parentNode.removeChild(button)
+
+  var rmtext = document.getElementById('pleasenote')
+  rmtext.parentNode.removeChild(p)
 
   var directionarrow = this.document.getElementById("windarrow");
 
